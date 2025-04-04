@@ -3,7 +3,7 @@ import pandas as pd
 import altair as alt
 
 def load_data():
-    df = pd.read_csv("Chocolate Sales.csv")
+    df = pd.read_csv("chocosales.csv")
     # convert date column to datetime datatype
     df.Date = pd.to_datetime(df.Date, format="%d-%b-%y")
     # convert the amount column to the float datatype
